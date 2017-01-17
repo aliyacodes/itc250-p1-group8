@@ -33,22 +33,22 @@ if($_POST){//show conversion
         echo $tempIn;
         
     }else if($temp1 == 'f' && $temp2 == 'c'){
-        echo '<h3><font color="red">' . 5/9*($tempIn-32) . ' C</font></h3>';
+        echo '<h3><font color="red">' . (5/9*($tempIn-32)) . ' C</font></h3>';
         
     }else if($temp1 == 'f' && $temp2 == 'k'){
-        echo '<h3><font color="red">' . 5/9*($tempIn-32)+273 . ' K</font></h3>';
+        echo '<h3><font color="red">' . (5/9*($tempIn-32)+273) . ' K</font></h3>';
         
     }else if($temp1 == 'c' && $temp2 == 'f'){
-        echo '<h3><font color="red">' . 9/5*($tempIn)+32 . ' F</font></h3>';
+        echo '<h3><font color="red">' . (9/5*($tempIn)+32) . ' F</font></h3>';
         
     }else if($temp1 == 'c' && $temp2 == 'k'){
-        echo '<h3><font color="red">' . $tempIn+273 . ' K</font></h3>';
+        echo '<h3><font color="red">' . ($tempIn+273) . ' K</font></h3>';
         
     }else if($temp1 == 'k' && $temp2 == 'f'){
-        echo '<h3><font color="red">' . 9/5*($tempIn-273)+32 . ' F</font></h3>';
+        echo '<h3><font color="red">' . (9/5*($tempIn-273)+32) . ' F</font></h3>';
         
     }else if($temp1 == 'k' && $temp2 == 'c'){
-        echo '<h3><font color="red">' . $tempIn-273 . ' C</font></h3>';
+        echo '<h3><font color="red">' . ($tempIn-273) . ' C</font></h3>';
         
     }
     
