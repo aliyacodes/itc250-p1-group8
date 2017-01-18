@@ -1,0 +1,11 @@
+form{
+    width: 600px;
+    margin:auto;
+    text-align: center;
+    border: 2px solid black;
+    
+}
+div{
+    font-size: 36px;
+    margin: 25px;
+}
