@@ -22,7 +22,6 @@ echo '
     <input type ="submit" value="Convert" /><br />
     <div>
     ';
-
 if($_POST){//show data
     $temp1 = $_POST['Temp1'];
     $temp2 = $_POST['Temp2'];
@@ -45,33 +44,28 @@ if($_POST){//show data
         
         
     }else if($temp1 == 'f' && $temp2 == 'c'){
-        echo round(5/9*($tempIn-32),2).'&#8451';
+        echo $tempIn.'<span class="F">&#8457</span> = '.round(5/9*($tempIn-32),2).'<span class="C">&#8451</span>';
         
     }else if($temp1 == 'f' && $temp2 == 'k'){
-        echo round(5/9*($tempIn-32)+273,2).'&#8490';
+        echo $tempIn.'<span class="F">&#8457</span> = '.round(5/9*($tempIn-32)+273,2).'<span class="K">&#8490</span>';
         
     }else if($temp1 == 'c' && $temp2 == 'f'){
-        echo round(9/5*($tempIn)+32,2).'&#8457';
+        echo $tempIn.'<span class="C">&#8451</span> = '.round(9/5*($tempIn)+32,2).'<span class="F">&#8457</span>';
         
     }else if($temp1 == 'c' && $temp2 == 'k'){
-        echo round($tempIn+273,2).'&#8490';
+        echo $tempIn.'<span class="C">&#8451</span> = '.round($tempIn+273,2).'<span class="K">&#8490</span>';
         
     }else if($temp1 == 'k' && $temp2 == 'f'){
-        echo round(9/5*($tempIn-273)+32,2).'&#8457';
+        echo $tempIn.'<span class="K">&#8490</span> = '.round(9/5*($tempIn-273)+32,2).'<span class="F">&#8457</span>';
         
     }else if($temp1 == 'k' && $temp2 == 'c'){
-        echo round($tempIn-273,2).'&#8451';
+        echo $tempIn.'<span class="K">&#8490</span> = '.round($tempIn-273,2).'<span class="C">&#8451</span>';
         
     }
     
 }
-
 echo 
     '
     </div>
     </form>
     ';
-
-
-
-
